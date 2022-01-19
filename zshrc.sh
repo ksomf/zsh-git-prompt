@@ -21,7 +21,9 @@ chpwd_update_git_vars() {
 }
 
 update_current_git_vars() {
+    [[ "$(git config --get zsh.minimal-updates)" == "1" ]] && [ ! -n "$__EXECUTED_GIT_COMMAND" ] && return
     unset __CURRENT_GIT_STATUS
+
 
     if [ "$GIT_PROMPT_EXECUTABLE" = "python" ]; then
         local py_bin=${ZSH_GIT_PROMPT_PYBIN:-"python"}
