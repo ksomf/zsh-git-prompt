@@ -16,6 +16,10 @@ I do not write Haskell, so I can only ensure the `zshrc.sh` and python version a
 
 A summary of all changes can be found at [Fork Status](https://github.com/starcraftman/zsh-git-prompt/wiki)
 
+### This Fork of Fork
+
+This fork is just for allowing git config to only update prompt on git commands.
+
 ## Examples
 
 The prompt may look like the following:
